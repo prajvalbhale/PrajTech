@@ -1,0 +1,9 @@
+.ani{
+  position: fixed;
+  top:-100%; right:-100%; left:-100%; bottom:-100%;
+  margin:auto;
+  z-index:0;
+}
+.usersignup{
+  font-size: 20px;
+}

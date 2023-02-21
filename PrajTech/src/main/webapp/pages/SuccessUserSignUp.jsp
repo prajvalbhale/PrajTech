@@ -1,0 +1,38 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+var seconds=0;
+function displaysec(){
+	seconds += 1;
+}
+setInterval(displaysec, 1000);
+
+function redirectpage() {
+	window.location="/show-login-page-after-signup";
+}
+setTimeout('redirectpage()', 3000);
+</script>
+<meta charset="ISO-8859-1">
+<title>PrajTech</title>
+<link rel="stylesheet" href="static/css/style.css">
+<style type="text/css">
+.ani{
+  position: fixed;
+  top:-100%; right:-100%; left:-100%; bottom:-100%;
+  margin:auto;
+  z-index:0;
+}
+.usersignup{
+  font-size: 20px;
+}
+</style>
+</head>
+<body>
+<img class="ani" alt="succee signup" src="animations/successfull_ani.gif">
+<h2>User SignUp Successful</h2>
+<h3>You Will Automatically Redirect On <br> Login Page</h3>
+</body>
+</html>
